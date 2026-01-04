@@ -16,19 +16,36 @@
       color: #fff;
       text-align: center;
     }
+
     .card {
-      padding: 25px;
-      border-radius: 12px;
+      padding: 30px;
+      border-radius: 14px;
       background: rgba(255,255,255,0.03);
       box-shadow: 0 0 25px rgba(0,0,0,0.6);
     }
+
     h1 {
       font-size: 34px;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 18px;
-      opacity: 0.8;
+      opacity: 0.85;
+      margin-bottom: 15px;
+    }
+
+    .laugh {
+      font-size: 26px;
+      letter-spacing: 3px;
+      animation: laughAnim 1.2s infinite;
+      color: #ff4444;
+    }
+
+    @keyframes laughAnim {
+      0%   { transform: scale(1); opacity: 0.6; }
+      50%  { transform: scale(1.15); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.6; }
     }
   </style>
 </head>
@@ -36,6 +53,7 @@
   <div class="card">
     <h1>👀 Curioso?</h1>
     <p>Se chegou até aqui, alguma coisa chamou sua atenção 😏</p>
+    <div class="laugh">HAHAHAHA 😂</div>
   </div>
 </body>
 </html>
